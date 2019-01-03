@@ -70,15 +70,18 @@ namespace CoubSharper {
 			_token = JsonConvert.DeserializeObject<CoubToken>(content);
 		}
 
-		public CoubsSearchResponse SearchCoubs(string query, OrderBy orderBy = OrderBy.views_count, int page = 1) {
+		public string SearchCoubsJson(string query, OrderBy orderBy = OrderBy.views_count, int page = 1) {
 			// GET /api/v2/search/coubs?q=best coub ever&order_by=likes_count&page=1
 			string uri = "http://coub.com/api/v2/search/coubs"
 					  + $"?q={query}"
 					  + $"&order_by={orderBy}"
 					  + $"&page={page}"; // the number of the page containing results (by default is set to 1)
-			return JsonConvert.DeserializeObject<CoubsSearchResponse>(
-				_client.GetAsync(uri).Result.Content.ReadAsStringAsync().Result
-			);
+			return _client.GetAsync(uri).Result.Content.ReadAsStringAsync().Result;
+		}
+
+		public CoubsSearchResponse SearchCoubs(string query, OrderBy orderBy = OrderBy.views_count, int page = 1) {
+			string coubsJson = SearchCoubsJson(query, orderBy, page);
+			return JsonConvert.DeserializeObject<CoubsSearchResponse>(coubsJson);
 		}
 
 		// credits to: 'https://brockallen.com/2016/09/24/process-start-for-urls-on-net-core/'
