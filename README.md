@@ -2,7 +2,7 @@
 
 <div align="center">
 
-Coub Search API of https://coub.com
+Coub Search API, https://coub.com
 
 [![GitHub license](https://img.shields.io/github/license/ewgraf/CoubSharper.svg)](https://raw.githubusercontent.com/rails/rails/master/MIT-LICENSE)
 [![NuGet](https://img.shields.io/badge/nuget-v1.0-orange.svg)](https://www.nuget.org/packages/CoubSharper)
