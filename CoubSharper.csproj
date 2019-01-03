@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>ewgraf</Authors>
-    <Description>Coub Search API C#/.Net Core wrapper</Description>
+    <Description>Coub Search API C#/.NET Core wrapper</Description>
     <PackageProjectUrl>https://github.com/ewgraf/CoubSharper</PackageProjectUrl>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <Company>https://github.com/ewgraf</Company>
