@@ -34,7 +34,7 @@ namespace CoubSharperTest {
     public class Program {
         public static void Main(string[] args) {			
             using (var client = new CoubClient()) {
-                CoubsSearchResponse search = client.SearchCoubs(query: "cosplay", OrderBy.views_count, page: 1);
+                CoubsSearchResponse search = client.SearchCoubs("cosplay", OrderBy.views_count, page: 1);
 
                 var coubs = search.coubs.Select(c => new {
                     Permalink = $"https://coub.com/view/{c.permalink}",
