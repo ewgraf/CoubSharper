@@ -5,13 +5,15 @@
 Coub Search API, https://coub.com
 
 [![GitHub license](https://img.shields.io/github/license/ewgraf/CoubSharper.svg)](https://raw.githubusercontent.com/rails/rails/master/MIT-LICENSE)
-[![NuGet](https://img.shields.io/badge/nuget-v1.0-orange.svg)](https://www.nuget.org/packages/CoubSharper)
+[![NuGet](https://img.shields.io/badge/nuget-v2.0-orange.svg)](https://www.nuget.org/packages/CoubSharper)
 [![.Net](https://img.shields.io/badge/.net%20standard-2.0%2B-blue.svg)](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)
 
 </div>
 
 # Install
-PM> `Install-Package CoubSharper` from nuget https://www.nuget.org/packages/CoubSharper
+\> `dotnet add package CoubSharper`  /  `Install-Package CoubSharper`
+
+Nuget: https://www.nuget.org/packages/CoubSharper
 
 # Usage
 ```csharp
