@@ -70,7 +70,7 @@ namespace CoubSharper {
 			_token = JsonConvert.DeserializeObject<CoubToken>(content);
 		}
 
-		public CoubsSearchResponse SearchCoubs(string query, OrderBy orderBy = OrderBy.newest_popular, int page = 1) {
+		public CoubsSearchResponse SearchCoubs(string query, OrderBy orderBy = OrderBy.views_count, int page = 1) {
 			// GET /api/v2/search/coubs?q=best coub ever&order_by=likes_count&page=1
 			string uri = "http://coub.com/api/v2/search/coubs"
 					  + $"?q={query}"
