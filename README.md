@@ -40,7 +40,7 @@ namespace CoubSharperTest {
                     Permalink = $"https://coub.com/view/{c.permalink}",
                     Tags = c.tags.Select(t => t.title).ToArray(),
                     Title = c.title,
-                    OriginalTitle = c.media_blocks.external_video.title
+                    OriginalTitle = c.media_blocks?.external_video?.title
                 }).ToArray();
 
                 string coubsJson = JsonConvert.SerializeObject(coubs, Formatting.Indented);
