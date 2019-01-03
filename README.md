@@ -11,9 +11,9 @@ Coub Search API, https://coub.com
 </div>
 
 # Install
-\> `dotnet add package CoubSharper`  /  `Install-Package CoubSharper`
+\> `dotnet add package CoubSharper` or `Install-Package CoubSharper` or via `Manage NuGet Packages...`
 
-Nuget: https://www.nuget.org/packages/CoubSharper
+NuGet: https://www.nuget.org/packages/CoubSharper
 
 # Usage
 ```csharp
